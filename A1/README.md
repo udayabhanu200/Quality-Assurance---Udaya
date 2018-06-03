@@ -25,6 +25,9 @@ c) change input file name in line 10 of code to check different conditions
 b) outputs will be saved in the same folder with as names mentioned in code.
 
 10. Didn't try combinations as list becomes huge and shown one sample for part number and quantity.
+11. XML format validation is done which says if xml is valid or not.
+XSD generator is used to create schema document for input1 xml
+XSD document inxsd.xsd is added to the folder
 
 11. Response design is as follows
 Sample response:

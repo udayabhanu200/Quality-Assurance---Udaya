@@ -6,7 +6,8 @@ Created on Thu May 31 22:23:06 2018
 """
 
 
-import xml.etree.ElementTree as ET                                  #importing XML parsing library
+import xml.etree.ElementTree as ET     
+from lxml import etree                             #importing XML parsing library
 e = ET.parse('input1.xml').getroot()                                # parsing the input file named input1, it gives error if input file format is wrong
 orderitems = e.findall('quantity')      
 g = e.find('orderitems/item/partnumber').text                       #reading part number from XML
@@ -36,6 +37,28 @@ class Order:                           #Created class named order to validate or
         print(elem.text)
         for child in elem.findall('*'):
             show(child)
+
+
+    def validate(xml_path: str, xsd_path: str) -> bool:
+
+        xmlschema_doc = etree.parse(xsd_path)
+        xmlschema = etree.XMLSchema(xmlschema_doc)
+
+        xml_doc = etree.parse(xml_path)
+        result = xmlschema.validate(xml_doc)
+
+        return result
+        order = ET.Element('Format')
+        result = ET.SubElement(order, 'Validation')
+        result.text ='Valid XML format'
+
+
+    if validate("input1.xml", "inxsd.xsd"):
+        print('Valid!')
+    else:
+        print('Not valid!')
+    
+    
 
     # Dealer ID validation section 
 
@@ -471,4 +494,6 @@ d1.XMLformatStreetExist(m)
 d1.XMLformatStreetEmpty(m)
 d1.XMLformatNameEmpty(n)
 d1.XMLformatName(n)
+
+
 
