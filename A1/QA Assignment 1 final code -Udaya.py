@@ -39,7 +39,7 @@ class Order:                           #Created class named order to validate or
             show(child)
 
 
-    def validate(xml_path: str, xsd_path: str) -> bool:
+    def validate(xml_path: str, xsd_path: str) -> bool:   #validate XML format , XSD file is created using online generator and added to the file
 
         xmlschema_doc = etree.parse(xsd_path)
         xmlschema = etree.XMLSchema(xmlschema_doc)
@@ -53,7 +53,7 @@ class Order:                           #Created class named order to validate or
         result.text ='Valid XML format'
 
 
-    if validate("input1.xml", "inxsd.xsd"):
+    if validate("input1.xml", "inxsd.xsd"): #prints if input xml is valid or not
         print('Valid!')
     else:
         print('Not valid!')
@@ -138,9 +138,7 @@ class Order:                           #Created class named order to validate or
                 response = open('partavailable.xml', "wb")
                 response.write(ET.tostring(order))
                 response.close()
-                print (g) 
-                print(partno)
-               
+                
 
 
 
@@ -263,8 +261,7 @@ class Order:                           #Created class named order to validate or
                 response = open('dbpass.xml', "wb")
                 response.write(ET.tostring(order))
                 response.close()
-                print (g)
-                print(partno)
+                
                 
 
    #Delivery address validation section
