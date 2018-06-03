@@ -1,5 +1,5 @@
 # Quality-Assurance---Udaya
-1. Script is in python - Used spyder from anaconda package to write the code. Input 1 is the input xml file sample
+1. Script is in python - Used spyder from anaconda package to write the code. Input 1 is the input xml file sample, XSD file is inxsd.xsd file in the folder
 2. Tried to cover all the main scenarios.
 3. Class is used to add all the unit tests.
 4. Tests can be run using class objects.
@@ -20,8 +20,8 @@
  10.2 for name - Empty, valid
 
 9. Instructions to run:
-a) save input xml and code file in same folder.
-c) change input file name in line 10 of code to check different conditions
+a) save input1.xml, inxsd.xsd and code file in same folder.
+c) change input file name in line 10 of code to check different conditions with different input files
 b) outputs will be saved in the same folder with as names mentioned in code.
 
 10. Didn't try combinations as list becomes huge and shown one sample for part number and quantity.
