@@ -1,0 +1,13 @@
+1. Separated all the classes specific to the functionality 
+ CountryGDPReport.java only gives the report 
+ 
+2. Higher level classes also do not depend on the lower classes after the re factoring
+ 
+ 3. GetGDPofDifferentSectors.java is OPEN for implementing future common methods from any of the countries
+ Also GetGDPofDifferentSectors.java can be implemented to new country type.
+ 
+ Every new country type will have its own implementation and it is true for the CountryGDPReport.java class also :  they are closed for modifications
+ 
+ 
+ 
+  

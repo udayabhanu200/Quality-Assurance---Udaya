@@ -1,0 +1,6 @@
+Interface segregation principle is violated.
+
+AquaticInsect is forced to implement fly() 
+and Flying insect is forced to implement swim()
+
+ 

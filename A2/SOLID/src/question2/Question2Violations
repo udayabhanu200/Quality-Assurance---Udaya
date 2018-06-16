@@ -1,0 +1,6 @@
+This example : Question 2 Violates "Interface Segregation"
+Because, Book and the DVD classes were forced to implement 
+unnecessary  methods from "ILibraryItem".
+
+Book implements GetPlayTime() and GetCastList(),the operations which has nothing to do with Book Library item type.
+	  

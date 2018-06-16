@@ -1,0 +1,11 @@
+Single Responsibility principle
+
+
+
+Procedure:
+separated code to Store and loading Piggy bank information using StoreAndGetLedger.java
+
+Now, PiggyBank.java only meant for dropping coins and check how many of each currency coin exists
+
+Implemented Client.java Driver classs to test the code  
+ 
