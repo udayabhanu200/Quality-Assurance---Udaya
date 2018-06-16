@@ -2,7 +2,7 @@ Instructions:
 
 This Readme is for A2. Readme for A1 was given outside. So consider only the content inside A2 folder for this assignment.
 
-1.SOLID is the folder where I have done the queries.
+1.SOLID is the folder where I have done the coding.
 2.Go to src inside the solid folder
 3.You can see all the questions with code and a document mentioning the violated principle
 4. Document named QuestionNo in each question folder is the document where principle name is mentioned, rest are java filed where code is fixed.
